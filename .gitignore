@@ -1,0 +1,22 @@
+# Ignore build artifacts
+bin/
+obj/
+
+# Ignore Visual Studio settings
+.vs/
+*.user
+*.suo
+
+# Ignore Rider IDE files
+.idea/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore compiled binary files
+*.dll
+*.exe
+
+# Ignore publish output
+wwwroot/
