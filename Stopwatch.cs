@@ -22,7 +22,7 @@ public class Stopwatch
     {
         if (IsRunning) return;
         IsRunning = true;
-        Timer = new Timer(Tick, null, 0, 1000);//used a timer instead of Thread.sleep
+        Timer = new Timer(Tick, null, 0, 1000); //used a timer instead of Thread.sleep
         OnStarted?.Invoke("Stopwatch Started!");
     }
 
@@ -45,7 +45,7 @@ public class Stopwatch
     {
         if (IsRunning)
         {
-            TimeElapsed = TimeElapsed.Add(TimeSpan.FromSeconds(1));
+            TimeElapsed = TimeElapsed.Add(TimeSpan.FromSeconds(1)); //add to TimeElapsed every second and show it
             Console.WriteLine($"Time Elapsed: {TimeElapsed}");
         }
     }
