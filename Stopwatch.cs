@@ -22,7 +22,7 @@ public class Stopwatch
     {
         if (IsRunning) return;
         IsRunning = true;
-        Timer = new Timer(Tick, null, 0, 1000);
+        Timer = new Timer(Tick, null, 0, 1000);//used a timer instead of Thread.sleep
         OnStarted?.Invoke("Stopwatch Started!");
     }
 
